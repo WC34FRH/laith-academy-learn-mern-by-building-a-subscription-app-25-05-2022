@@ -4,6 +4,7 @@ import { useState } from "react";
 interface ModalProps {
   text: string;
   variant: "primary" | "secondary" | "danger";
+  isSignupFlow: boolean;
 }
 
 const ModalComponent = ({ text, variant }: ModalProps) => {
