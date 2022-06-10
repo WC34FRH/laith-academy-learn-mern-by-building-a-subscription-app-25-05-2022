@@ -51,6 +51,8 @@ const ModalComponent = ({ text, variant, isSignupFlow }: ModalProps) => {
     if (data.errors.length) {
       setErrorMsg(data.errors[0].msg);
     }
+
+    localStorage.setItem("token", data.data.token);
   };
 
   return (
